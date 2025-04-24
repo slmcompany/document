@@ -19,65 +19,45 @@ export default function QuanLyTaiKhoanGoogleMaps() {
         <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700 mb-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <p className="text-sm font-medium text-gray-500 dark:text-gray-400">Email đăng nhập:</p>
-              <p className="text-gray-900 dark:text-white">maps@sieulonmanh.com</p>
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-400">Tên công ty:</p>
+              <p className="text-gray-900 dark:text-white">Công ty cổ phần đầu tư SLM</p>
             </div>
             <div>
-              <p className="text-sm font-medium text-gray-500 dark:text-gray-400">Loại tài khoản:</p>
-              <p className="text-gray-900 dark:text-white">Google Business Profile</p>
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-400">Loại hình:</p>
+              <p className="text-gray-900 dark:text-white">Công ty năng lượng mặt trời ở Việt Nam</p>
             </div>
             <div>
-              <p className="text-sm font-medium text-gray-500 dark:text-gray-400">Trạng thái xác minh:</p>
-              <p className="text-gray-900 dark:text-white">Đã xác minh</p>
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-400">Đánh giá:</p>
+              <p className="text-gray-900 dark:text-white">5.0 ⭐ (11 đánh giá trên Google)</p>
             </div>
             <div>
-              <p className="text-sm font-medium text-gray-500 dark:text-gray-400">Người quản lý:</p>
-              <p className="text-gray-900 dark:text-white">Team Marketing</p>
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-400">Trạng thái:</p>
+              <p className="text-green-600 dark:text-green-400">Đang mở cửa</p>
             </div>
-            <div className="col-span-1 md:col-span-2">
-              <p className="text-sm font-medium text-gray-500 dark:text-gray-400">Liên kết chính thức:</p>
-              <a href="https://g.co/kgs/SkPco3e" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                https://g.co/kgs/SkPco3e
-              </a>
+            <div>
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-400">Số điện thoại:</p>
+              <p className="text-gray-900 dark:text-white">0969 663 387</p>
+            </div>
+            <div>
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-400">Địa điểm:</p>
+              <p className="text-gray-900 dark:text-white">Diamond Flower Tower</p>
             </div>
           </div>
         </div>
         
         <h2>Địa điểm đã đăng ký</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div className="grid grid-cols-1 gap-6 mb-6">
           <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700">
-            <h3 className="text-lg font-medium text-gray-900 dark:text-white">Văn phòng chính</h3>
+            <h3 className="text-lg font-medium text-gray-900 dark:text-white">Văn phòng Hà Nội</h3>
             <p className="text-gray-600 dark:text-gray-300 mt-2">
-              123 Đường Nguyễn Văn Linh, Quận 7, TP. Hồ Chí Minh
+              P. Hoàng Đạo Thúy, Trung Hòa Nhân Chính, Thanh Xuân, Hà Nội
             </p>
             <div className="flex items-center mt-2">
               <svg className="w-4 h-4 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
               </svg>
-              <span className="text-gray-600 dark:text-gray-300 text-sm">4.8/5.0 (356 đánh giá)</span>
-            </div>
-            <div className="mt-4">
-              <a href="https://g.co/kgs/SkPco3e" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-sm inline-flex items-center">
-                <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
-                  <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
-                </svg>
-                Xem trên Google Maps
-              </a>
-            </div>
-          </div>
-          
-          <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700">
-            <h3 className="text-lg font-medium text-gray-900 dark:text-white">Chi nhánh Hà Nội</h3>
-            <p className="text-gray-600 dark:text-gray-300 mt-2">
-              456 Đường Lê Văn Lương, Quận Cầu Giấy, Hà Nội
-            </p>
-            <div className="flex items-center mt-2">
-              <svg className="w-4 h-4 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-              <span className="text-gray-600 dark:text-gray-300 text-sm">4.6/5.0 (215 đánh giá)</span>
+              <span className="text-gray-600 dark:text-gray-300 text-sm">5.0/5.0 (11 đánh giá)</span>
             </div>
             <div className="mt-4">
               <a href="https://g.co/kgs/SkPco3e" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-sm inline-flex items-center">
@@ -98,7 +78,7 @@ export default function QuanLyTaiKhoanGoogleMaps() {
           
           <ol className="list-decimal pl-5 mt-2">
             <li>Truy cập liên kết chính thức: <a href="https://g.co/kgs/SkPco3e" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">https://g.co/kgs/SkPco3e</a></li>
-            <li>Đăng nhập bằng email: maps@sieulonmanh.com</li>
+            <li>Đăng nhập bằng email: sale@slmsolar.com</li>
             <li>Hoặc đăng nhập vào <a href="https://business.google.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Google Business Profile</a></li>
           </ol>
           
