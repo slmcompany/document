@@ -44,6 +44,11 @@ export default function QuanLyTenMien() {
       id: 7, 
       name: 'steelman.vn', 
       expiryDate: '30/12/2025'
+    },
+    { 
+      id: 8, 
+      name: 'slmsolar.vn', 
+      expiryDate: '28/04/2025'
     }
   ];
 

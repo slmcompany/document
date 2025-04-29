@@ -49,6 +49,32 @@ export default function QuanLyHeThongNAS() {
           </div>
         </div>
         
+        <h2>Thông tin truy cập NAS</h2>
+        
+        <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700 mb-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <h3 className="text-lg font-medium text-gray-900 dark:text-white">NAS Văn phòng</h3>
+              <ul className="mt-2">
+                <li><strong>QuickConnect URL:</strong> <a href="https://quickconnect.to/" className="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">https://quickconnect.to/</a></li>
+                <li><strong>QuickConnect ID:</strong> slmjsc</li>
+                <li><strong>Tài khoản:</strong> admin</li>
+                <li><strong>Mật khẩu:</strong> Slm@879291</li>
+              </ul>
+            </div>
+            
+            <div className="bg-yellow-50 dark:bg-yellow-900 p-4 rounded-lg border border-yellow-200 dark:border-yellow-800">
+              <h4 className="text-yellow-700 dark:text-yellow-300 font-medium">Lưu ý bảo mật</h4>
+              <ul className="mt-2 text-yellow-700 dark:text-yellow-300">
+                <li>Không chia sẻ thông tin đăng nhập với người không có quyền</li>
+                <li>Thay đổi mật khẩu định kỳ</li>
+                <li>Đăng xuất sau khi sử dụng xong</li>
+                <li>Báo cáo ngay nếu phát hiện hoạt động đáng ngờ</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
         <h2>Cấu trúc thư mục</h2>
         
         <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700 mb-6">

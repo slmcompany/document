@@ -108,6 +108,20 @@ export default function QuanLyMaNguonGit() {
                 <td className="py-2 px-4">20/03/2025</td>
               </tr>
               <tr className="border-b border-gray-200 dark:border-gray-700">
+                <td className="py-2 px-4">SLM Solar VN</td>
+                <td className="py-2 px-4">
+                  <a href="https://github.com/slmcompany/slmsolar.vn" className="text-blue-600 hover:underline">
+                    github.com/slmcompany/slmsolar.vn
+                  </a>
+                  {" | "}
+                  <a href="https://slmsolar.vn" className="text-green-600 hover:underline" target="_blank" rel="noopener noreferrer">
+                    slmsolar.vn
+                  </a>
+                </td>
+                <td className="py-2 px-4">Astro</td>
+                <td className="py-2 px-4">29/04/2025</td>
+              </tr>
+              <tr className="border-b border-gray-200 dark:border-gray-700">
                 <td className="py-2 px-4">Sile Media</td>
                 <td className="py-2 px-4">
                   <a href="https://github.com/slmcompany/silemedia.vn" className="text-blue-600 hover:underline">

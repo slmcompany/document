@@ -52,19 +52,31 @@ export default function DanhSachTaiKhoan() {
                 <td className="py-2 px-4">Slm@879291</td>
               </tr>
               <tr className="border-b border-gray-200 dark:border-gray-700">
+                <td className="py-2 px-4">App sinephone</td>
+                <td className="py-2 px-4"></td>
+                <td className="py-2 px-4">Vcci</td>
+                <td className="py-2 px-4">vcci123</td>
+              </tr>
+              <tr className="border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
                 <td className="py-2 px-4">App Solis</td>
                 <td className="py-2 px-4"></td>
                 <td className="py-2 px-4">sale@slmsolar.com</td>
                 <td className="py-2 px-4">Solarmax123456@</td>
               </tr>
-              <tr className="border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+              <tr className="border-b border-gray-200 dark:border-gray-700">
                 <td className="py-2 px-4">App Solarman</td>
                 <td className="py-2 px-4"></td>
                 <td className="py-2 px-4">sale@slmsolar.com</td>
                 <td className="py-2 px-4">Solarmax123456@</td>
               </tr>
+              <tr className="border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+                <td className="py-2 px-4">App Dyness</td>
+                <td className="py-2 px-4"></td>
+                <td className="py-2 px-4">sale@slmsolar.com</td>
+                <td className="py-2 px-4">Solarmax123456@</td>
+              </tr>
               <tr className="border-b border-gray-200 dark:border-gray-700">
-                <td className="py-2 px-4">Deye Cloud</td>
+                <td className="py-2 px-4">Dyer Cloud</td>
                 <td className="py-2 px-4"></td>
                 <td className="py-2 px-4"></td>
                 <td className="py-2 px-4"></td>
@@ -100,19 +112,19 @@ export default function DanhSachTaiKhoan() {
                 <td className="py-2 px-4">SLM879291</td>
               </tr>
               <tr className="border-b border-gray-200 dark:border-gray-700">
-                <td className="py-2 px-4">Instagram</td>
+                <td className="py-2 px-4">instagram</td>
                 <td className="py-2 px-4"></td>
                 <td className="py-2 px-4">solar_max87</td>
                 <td className="py-2 px-4">SLM879291</td>
               </tr>
               <tr className="border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
-                <td className="py-2 px-4">iCloud eliton</td>
+                <td className="py-2 px-4">icloud eliton</td>
                 <td className="py-2 px-4"></td>
                 <td className="py-2 px-4">sale@eliton.vn</td>
                 <td className="py-2 px-4">Slm@879291</td>
               </tr>
               <tr className="border-b border-gray-200 dark:border-gray-700">
-                <td className="py-2 px-4">Tiktok SOLARMAX</td>
+                <td className="py-2 px-4">Titok SOLARMAX</td>
                 <td className="py-2 px-4"></td>
                 <td className="py-2 px-4">0977 879 291</td>
                 <td className="py-2 px-4">Slm@879291</td>
@@ -124,7 +136,7 @@ export default function DanhSachTaiKhoan() {
                 <td className="py-2 px-4">Slm@879291</td>
               </tr>
               <tr className="border-b border-gray-200 dark:border-gray-700">
-                <td className="py-2 px-4">Tiktok ELITON</td>
+                <td className="py-2 px-4">Titok ELITON</td>
                 <td className="py-2 px-4"></td>
                 <td className="py-2 px-4">0988663387</td>
                 <td className="py-2 px-4">Slm@879291</td>
@@ -142,15 +154,33 @@ export default function DanhSachTaiKhoan() {
                 <td className="py-2 px-4">Slm879291@</td>
               </tr>
               <tr className="border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
-                <td className="py-2 px-4">Máy chủ web</td>
-                <td className="py-2 px-4">https://server.slmglobal.vn/login</td>
+                <td className="py-2 px-4">Máy chủ web IP: 212.85.25.175</td>
+                <td className="py-2 px-4">
+                  <a href="https://server.slmglobal.vn/login" target="_blank" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">
+                    https://server.slmglobal.vn/login
+                  </a>
+                </td>
                 <td className="py-2 px-4">sale@slmsolar.com</td>
                 <td className="py-2 px-4">Solarmax@879291</td>
               </tr>
               <tr className="border-b border-gray-200 dark:border-gray-700">
-                <td className="py-2 px-4">Tailwind</td>
-                <td className="py-2 px-4">https://tailwindcss.com/plus/login</td>
+                <td className="py-2 px-4">Tailwwind</td>
+                <td className="py-2 px-4">
+                  <a href="https://tailwindcss.com/plus/login" target="_blank" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">
+                    https://tailwindcss.com/plus/login
+                  </a>
+                </td>
                 <td className="py-2 px-4">sale@slmsolar.com</td>
+                <td className="py-2 px-4">Slm@879291</td>
+              </tr>
+              <tr className="border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+                <td className="py-2 px-4">NAS Văn phòng</td>
+                <td className="py-2 px-4">
+                  <a href="https://quickconnect.to/" target="_blank" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">
+                    https://quickconnect.to/ - ID: slmjsc
+                  </a>
+                </td>
+                <td className="py-2 px-4">admin</td>
                 <td className="py-2 px-4">Slm@879291</td>
               </tr>
             </tbody>

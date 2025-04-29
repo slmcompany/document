@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import { useAuth } from '@/contexts/AuthContext';
 
 interface AuthGuardProps {
@@ -11,15 +11,17 @@ interface AuthGuardProps {
 export const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
   const { isLoggedIn } = useAuth();
   const router = useRouter();
+  const pathname = usePathname();
 
   useEffect(() => {
-    if (!isLoggedIn) {
+    // Chỉ chuyển hướng nếu chưa đăng nhập và không đang ở trang login
+    if (!isLoggedIn && pathname !== '/login') {
       router.push('/login');
     }
-  }, [isLoggedIn, router]);
+  }, [isLoggedIn, pathname, router]);
 
   // Không hiển thị nội dung cho đến khi xác thực thành công
-  if (!isLoggedIn) {
+  if (!isLoggedIn && pathname !== '/login') {
     return null;
   }
 

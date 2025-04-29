@@ -4,7 +4,6 @@ import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { 
-  HomeIcon, 
   UserGroupIcon, 
   UsersIcon, 
   SpeakerWaveIcon, 
@@ -14,7 +13,6 @@ import {
   PencilSquareIcon,
   PhotoIcon,
   MapIcon,
-  DocumentTextIcon,
   GlobeAltIcon
 } from '@heroicons/react/24/outline';
 
@@ -34,7 +32,6 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
   const pathname = usePathname();
 
   const navItems: NavItem[] = [
-    { title: 'Trang chủ', path: '/trang-chu', icon: <HomeIcon className="w-6 h-6" /> },
     { title: 'Danh sách tài khoản', path: '/danh-sach-tai-khoan', icon: <UserGroupIcon className="w-6 h-6" /> },
     { title: 'Quản lý tài khoản mạng xã hội', path: '/quan-ly-tai-khoan-mang-xa-hoi', icon: <UsersIcon className="w-6 h-6" /> },
     { title: 'Quản lý quảng cáo', path: '/quan-ly-quang-cao', icon: <SpeakerWaveIcon className="w-6 h-6" /> },
@@ -46,7 +43,6 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
     { title: 'Quản lý tài khoản Tailwind', path: '/quan-ly-tai-khoan-tailwind', icon: <PhotoIcon className="w-6 h-6" /> },
     { title: 'Quản lý tài khoản Google Maps', path: '/quan-ly-tai-khoan-google-maps', icon: <MapIcon className="w-6 h-6" /> },
     { title: 'Quản lý tên miền', path: '/quan-ly-ten-mien', icon: <GlobeAltIcon className="w-6 h-6" /> },
-    { title: 'Dữ liệu khác', path: '/du-lieu-khac', icon: <DocumentTextIcon className="w-6 h-6" /> },
   ];
 
   const renderNavItems = (items: NavItem[]) => {

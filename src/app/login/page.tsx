@@ -1,35 +1,48 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import { useAuth } from '@/contexts/AuthContext';
 
 export default function LoginPage() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
+  const pathname = usePathname();
   const { isLoggedIn, login } = useAuth();
 
   useEffect(() => {
-    // Nếu đã đăng nhập, chuyển hướng về trang chủ
-    if (isLoggedIn) {
+    // Nếu đã đăng nhập và đang ở trang login, chuyển hướng về trang chủ
+    if (isLoggedIn && pathname === '/login') {
       router.push('/');
     }
-  }, [isLoggedIn, router]);
+  }, [isLoggedIn, pathname, router]);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
+    setIsLoading(true);
 
     if (!username || !password) {
       setError('Vui lòng nhập đầy đủ thông tin');
+      setIsLoading(false);
       return;
     }
 
-    const success = login(username, password);
-    if (!success) {
-      setError('Tên đăng nhập hoặc mật khẩu không đúng');
+    try {
+      const success = await login(username, password);
+      if (!success) {
+        setError('Tên đăng nhập hoặc mật khẩu không đúng');
+      } else {
+        // Chuyển hướng về trang chủ sau khi đăng nhập thành công
+        router.push('/');
+      }
+    } catch (error) {
+      setError('Đã có lỗi xảy ra, vui lòng thử lại');
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -81,9 +94,12 @@ export default function LoginPage() {
           <div>
             <button
               type="submit"
-              className="flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              disabled={isLoading}
+              className={`flex justify-center w-full px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ${
+                isLoading ? 'bg-indigo-400 cursor-not-allowed' : 'bg-indigo-600 hover:bg-indigo-700'
+              }`}
             >
-              Đăng nhập
+              {isLoading ? 'Đang đăng nhập...' : 'Đăng nhập'}
             </button>
           </div>
         </form>
