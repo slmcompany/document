@@ -39,7 +39,7 @@ export default function LoginPage() {
         // Chuyển hướng về trang chủ sau khi đăng nhập thành công
         router.push('/');
       }
-    } catch (error) {
+    } catch {
       setError('Đã có lỗi xảy ra, vui lòng thử lại');
     } finally {
       setIsLoading(false);
