@@ -3,6 +3,18 @@ export default function QuanLyTaiKhoanMangXaHoi() {
     <div className="space-y-6">
       <h1 className="text-3xl font-bold">Quản lý tài khoản mạng xã hội</h1>
       
+      <div className="max-w-[800px] mx-0 mb-6">
+        <div className="relative" style={{ paddingBottom: '56.25%' }}>
+          <iframe 
+            src="https://www.youtube.com/embed/K12bjcT5CEg" 
+            title="YouTube video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="absolute top-0 left-0 w-full h-full rounded-lg"
+          ></iframe>
+        </div>
+      </div>
+      
       <div className="prose max-w-none dark:prose-invert">
         <p>
           Đây là danh sách các tài khoản mạng xã hội chính thức của các brand công ty, bao gồm Solarmax, Eliton và các brand khác. Hướng dẫn này giúp bạn quản lý và sử dụng đúng cách các kênh truyền thông chính thức.
