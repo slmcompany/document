@@ -13,7 +13,8 @@ import {
   PencilSquareIcon,
   PhotoIcon,
   MapIcon,
-  GlobeAltIcon
+  GlobeAltIcon,
+  DocumentTextIcon
 } from '@heroicons/react/24/outline';
 
 interface SidebarProps {
@@ -43,6 +44,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
     { title: 'Quản lý tài khoản Tailwind', path: '/quan-ly-tai-khoan-tailwind', icon: <PhotoIcon className="w-6 h-6" /> },
     { title: 'Quản lý tài khoản Google Maps', path: '/quan-ly-tai-khoan-google-maps', icon: <MapIcon className="w-6 h-6" /> },
     { title: 'Quản lý tên miền', path: '/quan-ly-ten-mien', icon: <GlobeAltIcon className="w-6 h-6" /> },
+    { title: 'Hướng dẫn update website', path: '/huong-dan-update-website', icon: <DocumentTextIcon className="w-6 h-6" /> },
   ];
 
   const renderNavItems = (items: NavItem[]) => {
